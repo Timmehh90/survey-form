@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="styles.css">
-    <title>Survey Form</title>
+    <title>Pet Survey Form</title>
   </head>
   <body>
     <header>
-      <h1 id="title">Survey Form</h1>
+      <h1 id="title">Pet Survey Form</h1>
       <p id="description"><em>Sumbit your favorite pet information and win free pet food for a year</em></p>
     </header>
     <main>
       <form id="survey-form">
         <fieldset>
-          <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your full name" required></label>
-          <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email address" required></label>
-          <label for="number" id="number-label">Age (optional) <input id="number" type="number" placeholder="Enter your age" min="13" max="120"></label>
+          <label for="name" id="name-label" title="Enter your full name">Name <input id="name" type="text" placeholder="Enter your full name" required></label>
+          <label for="email" id="email-label" title="Enter your email address">Email <input id="email" type="email" placeholder="Enter your email address" required></label>
+          <label for="number" id="number-label" title="Enter your age">Age (optional) <input id="number" type="number" placeholder="Enter your age" min="13" max="120"></label>
         </fieldset>
         <fieldset>
-          <label for="dropdown">What is your favorite pet?
+          <label for="dropdown" title="What is your favorite pet?">What is your favorite pet?
             <select id="dropdown">
               <option>Select an option</option>
               <option value="1">Cat</option>
@@ -32,7 +32,7 @@
           </label>
         </fieldset>
         <fieldset class="radio-field">
-          <legend>Do you own a pet?</legend>
+          <legend title="Do you own a pet?">Do you own a pet?</legend>
           <label><input id="has-pet" type="radio" name="has-pet" value="y"> Yes</label><br>
           <label><input id="has-pet" type="radio" name="has-pet" value="n"> No</label>
         </fieldset>
@@ -46,12 +46,15 @@
           <label><input type="checkbox" value="adaptable"> Adaptable</label>
         </fieldset>
         <fieldset>
-          <legend>Tell us your favorite pet story</legend>
+          <legend title="Tell us your favorite pet story">Tell us your favorite pet story</legend>
           <textarea placeholder="Write your story..."></textarea>
         </fieldset>
         <input id="submit" type="submit" value="Submit">
       </from>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Made by: &copy;Timmehh</p>
+      <p>Special thanks to <a href="https://copilot.microsoft.com/">Microsoft Copilot</a> for making the background</p>
+    </footer>
   </body>
 </html>
