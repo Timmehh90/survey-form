@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: #e1e5e9;
+}
+
+body {
+  background: #1e293b;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0.5em 0 0.2em;
+}
+
+header p {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-bottom: 2em;
+}
+
+#survey-form {
+  margin-inline: auto;
+  max-width: 600px;
+  border: #94a3b8 double 4px;
+  background: #33415599;
+  border-radius: 2%;
+  padding: 0 1em 1em;
+}
+
+#survey-form fieldset {
+  padding: 1em;
+  border: none;
+  border-bottom: #94a3b8 solid 2px;
+  margin: 0.2em 0;
+}
+
+#survey-form fieldset:nth-child(5),
+#survey-form fieldset:last-child {
+  border-bottom: none;
+}
+
+#survey-form input,
+#survey-form select,
+#survey-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+#survey-form input:focus,
+#survey-form select:focus,
+#survey-form textarea:focus {
+  outline-color: #475569;
+}
+
+#survey-form textarea {
+  height: 10em;
+}
+
+#survey-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+#survey-form legend {
+  padding-top: 8px;
+}
+
+#survey-form label:first-child {
+  margin-top: 0px;
+}
+
+#survey-form .checkbox-field label,
+#survey-form .radio-field label {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+input[type="submit"] {
+  color: #e1e5e9 !important;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  background: #1e293b !important;
+  border: #94a3b8 1px solid;
+  cursor: pointer;
+}
+
+#checkbox-guidance {
+  font-size: 0.7rem;
+}
